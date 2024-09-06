@@ -18,5 +18,19 @@
     <ClCompile Include="JuegoCalzados.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Calzado.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ManejadorCalzado.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Calzado.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ManejadorCalzado.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

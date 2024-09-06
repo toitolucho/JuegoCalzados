@@ -4,15 +4,63 @@
 #include <iostream>
 #include "Calzado.h";
 #include "ManejadorCalzado.h";
+using namespace std;
+
+int sumar(int a, int b)
+{
+    a++;
+    b++;
+    return a + b;
+}
+
+void aumetarTalla(Calzado *c1)
+{
+    short t = c1->getTalla();
+    t++;
+    c1->setTalla(t);
+    //cout << "Impresion desde funcion aumentar talla ";
+    c1->imprimir();
+}
 int main()
 {
+    //Calzado c1;
+    //un puntero es un referencia a sector de la memoria de un determinado tipo de dato
+    int x = 10;
+    int y = 20;
+    int z = sumar(x, y);
+    int f = sumar(x + 1, y + 1);
+    cout << x << endl;
+    cout << y << endl;
+    cout << z << endl;
+
+    /* int* pi = nullptr;
+     std::cout << a << std::endl;
+     std::cout << pi << std::endl;
+     pi = &a;
+     std::cout << pi << std::endl;
+     *pi = 15;
+     std::cout << a << std::endl;*/
+
+    Calzado c1, c2, c3('I', 38);
+    Calzado* pc = nullptr;
     
-    //declaracion de los objetos
+    //pc = &c1;
+    //pc->imprimir();
+    //aumetarTalla(pc);
+    //pc->imprimir();
 
-    //implementacion de la logica utilizando la clase ManejadorCalzado
+    ////crear una instancia a partir de un puntero
+    pc = new Calzado();
+    pc->imprimir();
 
 
-    std::cout << "Juego de Calzados, Adivina los pares!!\n";
+    /*c1.imprimir();
+    aumetarTalla(c1);
+    c1.imprimir();*/
+    
+
+    
+
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu

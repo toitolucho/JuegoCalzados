@@ -5,11 +5,18 @@ class Calzado
 	//definicion de la clase
 	//declaracion de atributos
 private:
-	int atributo1;
+	char ladoPie;
+	short talla;
 
 
 	//declarion de las firmas de las funciones
 public:
-	void funcionPrueba();
+	Calzado();
+	Calzado(char l, short t);
+	Calzado(short t);
+	bool esParDe(Calzado c);
+	void setTalla(short t);
+	short getTalla();
+	void imprimir();
 };
 
